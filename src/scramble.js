@@ -6,6 +6,7 @@
  */
 function scrambleWord(word) {
   // TODO: implement Fisher–Yates shuffle ⚙️
+
   return word; // ← placeholder so tests fail
 }
 
@@ -17,6 +18,9 @@ function scrambleWord(word) {
  */
 function isCorrect(word, guess) {
   // TODO: compare after normalising case & trimming 🧐
+  
+  word.toLowerCase() === guess.toLowerCase(); 
+
   return false; // ← placeholder so tests fail
 }
 
