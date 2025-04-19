@@ -4,11 +4,20 @@
  * @param {string} word
  * @returns {string}
  */
-function scrambleWord(word) {
-  // TODO: implement Fisher–Yates shuffle ⚙️
 
-  return word; // ← placeholder so tests fail
+function scrambleWord(a) {
+  // TODO: implement Fisher–Yates shuffle 
+
+  a=a.split("");
+  for(var b=a.length-1;0<b;b--){
+    var c=Math.floor(Math.random()*(b+1));
+    d=a[b];a[b]=a[c];
+    a[c]=d}
+    return a.join("") 
+
 }
+
+
 
 /**
  * Checks if `guess` matches the original `word` (case‑insensitive).
@@ -16,12 +25,12 @@ function scrambleWord(word) {
  * @param {string} guess
  * @returns {boolean}
  */
-function isCorrect(word, guess) {
-  // TODO: compare after normalising case & trimming 🧐
-  
-  word.toLowerCase() === guess.toLowerCase(); 
 
-  return false; // ← placeholder so tests fail
+
+
+function isCorrect(original, guess) {
+  return original.toLowerCase() === guess.toLowerCase();
+
 }
 
 module.exports = { scrambleWord, isCorrect };
