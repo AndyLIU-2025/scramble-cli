@@ -6,8 +6,10 @@ const { scrambleWord, isCorrect } = require("./scramble");
 //     accept their guess, and celebrate if they’re right. Loop for 5 rounds.
 //     Be creative – add a score, colours (chalk), or a countdown timer!
 
+
 async function main() {
   // TODO: Welcome the player & run the game loop 🕹️
+console.log("Welcome to Word Scramble");
 }
 
 main();
