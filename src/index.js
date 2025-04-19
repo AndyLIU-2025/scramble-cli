@@ -9,7 +9,25 @@ const { scrambleWord, isCorrect } = require("./scramble");
 
 async function main() {
   // TODO: Welcome the player & run the game loop 🕹️
-console.log("Welcome to Word Scramble");
+//console.log("Welcome to Word Scramble");
+//let a = "hello world";
+//console.log(scrambleWord(a));
+//isCorrect(a,b);
+const array = ["node", "software", "java"];
+const prompt = require('prompt-sync')();
+const puzzle = scrambleWord("java");
+const name = prompt("Unscramble > " + puzzle + " ");
+
+console.log(name);
+
+const result = isCorrect("java", name);
+
+if (result === true){
+  console.log("Congrats");
+}
+else{
+  console.log("try again");
+}
 }
 
 main();
