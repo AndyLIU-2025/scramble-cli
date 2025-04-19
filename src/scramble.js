@@ -4,6 +4,7 @@
  * @param {string} word
  * @returns {string}
  */
+
 function scrambleWord(a) {
   // TODO: implement Fisher–Yates shuffle 
 
@@ -13,6 +14,7 @@ function scrambleWord(a) {
     d=a[b];a[b]=a[c];
     a[c]=d}
     return a.join("") 
+
 }
 
 
@@ -25,8 +27,10 @@ function scrambleWord(a) {
  */
 
 
+
 function isCorrect(original, guess) {
   return original.toLowerCase() === guess.toLowerCase();
+
 }
 
 module.exports = { scrambleWord, isCorrect };
